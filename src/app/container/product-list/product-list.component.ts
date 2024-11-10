@@ -536,4 +536,12 @@ export class ProductListComponent {
   totalProductCount = this.products.length;
   totalProductInStock :number = this.products.filter(p => p.is_in_inventory===true).length
   totalProductOutOfStock = this.products.filter(p => p.is_in_inventory===false).length
+
+
+  selectedFilterRadioButton : string = 'all';
+
+  onFilterChanged(value:string){
+    console.log("onFilterChanged");
+    this.selectedFilterRadioButton = value;
+  }
 }
