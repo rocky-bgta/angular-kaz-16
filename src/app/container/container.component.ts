@@ -6,6 +6,11 @@ import {Component} from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent {
+
+  searchText: string = '';
+
+  /*
+
   name="John Smith";
   addToCart: number = 0;
   product = {
@@ -38,5 +43,10 @@ export class ContainerComponent {
       this.addToCart++;
     }
 
+  }
+  */
+
+  setSearchText(value:string) {
+    this.searchText = value;
   }
 }
